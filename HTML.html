@@ -3,70 +3,76 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script>
+        function cambiarTamaño(){
+            let valor = document.getElementById("input").value;
+            if(valor > 0){
+                document.getElementById("text").style.fontSize = valor + "px";
+            } 
+            else{
+                alert("Ingresar un número válido");
+            };
+        }
+        </script>
     </head>
     <body>
+        <img src="https://thumbs.dreamstime.com/b/perfil-de-usuario-vectorial-avatar-predeterminado-179376714.jpg?w=768"></img>
+        <div class="information">
+            <div>
+                <h3>Francisco Langlois</h3>                
+                <h5>Industrial Civil Engineering</h5>
+                <h5>Año 2023</h5>
+                <a href="https://github.com/FranciscoLanglois">Github</a>               
+                <p>I am a fifth-year student with an interest in data analysis, programming, and process optimization. I have experience working with tools like those listed in the table.</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>Phyton</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>GIT</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Ruby</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>Advance</td>
+                </tr>
+                <tr>
+                    <td>Spanish</td>
+                    <td>Native</td>
+                </tr>
+            </table>
+        </div>
         <div>
-            <col>
-                <row>"imagen"</row>
-                <row>
-                    <table>
-                        <tr>
-                            <th>Skill</th>
-                            <th>Level</th>
-                        </tr>
-                        <tr>
-                            <th>Phyton</yh>
-                            <th>Medio</th>
-                        </tr>
-                        <tr>
-                            <th>JavaScript</th>
-                            <th>Medio</th>
-                        </tr>
-                        <tr>
-                            <th>HTML/CSS</th>
-                            <th>Medio</th>
-                        </tr>
-                        <tr>
-                            <th>GIT</th>
-                            <th>Medio</th>
-                        </tr>
-                        <tr>
-                            <th>Excel</th>
-                            <th>Medio</th>
-                        </tr>
-                        <tr>
-                            <th>SQL</th>
-                            <th>Medio</th>
-                        </tr>
-                        <tr>
-                            <th>Ruby</th>
-                            <th>Medio</th>
-                        </tr>
-                        <tr>
-                            <th>Ingles</th>
-                            <th>Avanzado</th>
-                        </tr>
-                        <tr>
-                            <th>Español</th>
-                            <th>Nativo</th>
-                        </tr>
-                    </table>
-                </row>
-            </col>
-            <col>
-                <row>
-                    <h3 class="texto">Francisco Langlois</h3>
-                </row>
-                <row>
-                    <h5 class="texto">Ingeniería Civil Industrial</h5>
-                </row>
-                <row>
-                    <h5 class="texto">Año 2023</h5>
-                </row>
-                <row>
-                    <p class="texto">texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
-                </row>
-            </col>
+           <p id="text">Font size</p>
+            <label>Select font size:</label>
+            <input type="number" id="input"></input> 
+            <button onclick="cambiarTamaño()">press</button>
         </div>
     </body>
 </html>
